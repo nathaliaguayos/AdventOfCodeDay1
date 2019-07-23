@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,13 +18,15 @@ namespace Chronal_Calibration
         static void Main(string[] args)
         {
             Random random = new Random();
-            int[] frequencyChanges = new int[4];
+            
+            string[] lines = Properties.Resources.Input.Split('\n');
+            int[] frequencyChanges = new int[lines.Length];
             ChronalCalibration calibrator = new ChronalCalibration();
-            for (int i = 0; i < frequencyChanges.Length; i++)
+            for (int i = 0; i < lines.Length; i++)
             {
-                frequencyChanges[i] = random.Next(-10, 10); //here is where we are filling the array with random values.
+                frequencyChanges[i] = Int32.Parse(lines[i]);
             }
-            Console.WriteLine("The resulting frequency is: "+ calibrator.FrequencyCalibration(frequencyChanges));
+            Console.WriteLine("The resulting frequency is: " + calibrator.FrequencyCalibration(frequencyChanges));
             Console.Read();
         }
        
