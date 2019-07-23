@@ -28,7 +28,7 @@ Now I'm going to tell you how you can run the application and explain a little t
 3. Notice that the main class is there, in this method, I'm configuring the information that I need to use for the "FrequencyCalibration" method. 
 4. Click on the "Run" button and you will get a result
 
-**NOTE:** *The result would be different every time that you run the application because I used an array with random values to emulate the frequency changes.* 
+**NOTE:** *The solution input is in a project resourse called input.txt* 
 
 
 ## Running the tests
