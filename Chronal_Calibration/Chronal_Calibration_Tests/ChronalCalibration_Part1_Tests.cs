@@ -1,11 +1,12 @@
 ﻿using System;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Chronal_Calibration;
 
 namespace Chronal_Calibration_Tests
 {
     [TestClass]
-    public class ChronalCalibrationTests
+    public class ChronalCalibration_Part1_Tests
     {
 
         /// <summary>
@@ -22,7 +23,7 @@ namespace Chronal_Calibration_Tests
             int[] frequencyChanges = new int[3] { -1, -2, -3 };
 
             //Assert
-            Assert.IsNotNull(calibrator.FrequencyCalibration(frequencyChanges));
+            Assert.IsNotNull(calibrator.FrequencyCalibration(frequencyChanges,0,false).Last());
 
         }
 
@@ -41,7 +42,7 @@ namespace Chronal_Calibration_Tests
             int[] frequencyChanges = new int[4] { +1, -2, +3, +1 };
 
             //Assert
-            Assert.AreEqual(3, calibrator.FrequencyCalibration(frequencyChanges));
+            Assert.AreEqual(3, calibrator.FrequencyCalibration(frequencyChanges,0,false).Last());
             
         }
 
@@ -60,7 +61,7 @@ namespace Chronal_Calibration_Tests
             int[] frequencyChanges = new int[3] { +1, +1, +1 };
 
             //Assert
-            Assert.AreEqual(3, calibrator.FrequencyCalibration(frequencyChanges));
+            Assert.AreEqual(3, calibrator.FrequencyCalibration(frequencyChanges,0,false).Last());
 
         }
 
@@ -79,7 +80,7 @@ namespace Chronal_Calibration_Tests
             int[] frequencyChanges = new int[3] { +1, +1, -2 };
 
             //Assert
-            Assert.AreEqual(0, calibrator.FrequencyCalibration(frequencyChanges));
+            Assert.AreEqual(0, calibrator.FrequencyCalibration(frequencyChanges,0,false).Last());
 
         }
 
@@ -98,7 +99,7 @@ namespace Chronal_Calibration_Tests
             int[] frequencyChanges = new int[3] { -1, -2, -3 };
 
             //Assert
-            Assert.AreEqual(-6, calibrator.FrequencyCalibration(frequencyChanges));
+            Assert.AreEqual(-6, calibrator.FrequencyCalibration(frequencyChanges,0,false).Last());
 
         }
 
@@ -116,7 +117,7 @@ namespace Chronal_Calibration_Tests
             int[] frequencyChanges = new int[3] { -1, -2, -3 };
 
             //Assert
-            Assert.AreNotEqual(3, calibrator.FrequencyCalibration(frequencyChanges));
+            Assert.AreNotEqual(3, calibrator.FrequencyCalibration(frequencyChanges,0,false).Last());
 
         }
     }

@@ -12,23 +12,24 @@ namespace Chronal_Calibration
     {
         /// <summary>
         /// Author: Nathali Aguayo
-        /// Description: Here is where we configure our frequency change information, we generate an array of random values,
-        /// and then we will send this array to the "Calibrator" to processing this information and obtain the resulting frequency.
+        /// Description: This project was created to solve the "Day 1: Chronal Calibration" challenge part 1 and 2.
+        /// Here is the main class, so you just need to execute the solution and see the result. 
         /// </summary>
         static void Main(string[] args)
         {
-            Random random = new Random();
             
-            string[] lines = Properties.Resources.Input.Split('\n');
-            int[] frequencyChanges = new int[lines.Length];
             ChronalCalibration calibrator = new ChronalCalibration();
-            for (int i = 0; i < lines.Length; i++)
-            {
-                frequencyChanges[i] = Int32.Parse(lines[i]);
-            }
-            Console.WriteLine("The resulting frequency is: " + calibrator.FrequencyCalibration(frequencyChanges));
+            List<int> resultingFrequencies = new List<int>();
+            int[] dataForFreqCalibration = calibrator.ConfiguringDataForFreqCalibration(Properties.Resources.Input.Split('\n'));
+
+            resultingFrequencies = calibrator.FrequencyCalibration(dataForFreqCalibration, 0, false);
+
+            Console.WriteLine("======Day 1: Chronal Calibration======\n\nPart 1");
+            Console.WriteLine("\nThe resulting frequency is: " + resultingFrequencies.Last());
+
+            Console.WriteLine("\n\nPart 2\n");
+            Console.WriteLine("the first frequency reached twice is: " + calibrator.FindingTheFirstFrequencyReachedTwice(dataForFreqCalibration,resultingFrequencies));
             Console.Read();
         }
-       
     }
 }

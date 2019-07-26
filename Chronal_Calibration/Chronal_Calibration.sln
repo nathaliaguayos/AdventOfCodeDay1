@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.28307.705
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chronal_Calibration", "Chronal_Calibration\Chronal_Calibration.csproj", "{D75DECB2-7DCF-43FE-8880-C64060FD9EC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chronal_Calibration_Tests", "Chronal_Calibration_Tests\Chronal_Calibration_Tests.csproj", "{16BA80A0-C972-4574-A23F-ADACA191EA4E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChronalCalibration_Part1_Tests", "Chronal_Calibration_Tests\ChronalCalibration_Part1_Tests.csproj", "{16BA80A0-C972-4574-A23F-ADACA191EA4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChronalCalibration_Part2_Tests", "ChronalCalibration_Part2_Tests\ChronalCalibration_Part2_Tests.csproj", "{A7F6EA9C-9D1C-42B9-8730-451545E6A1D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{16BA80A0-C972-4574-A23F-ADACA191EA4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16BA80A0-C972-4574-A23F-ADACA191EA4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16BA80A0-C972-4574-A23F-ADACA191EA4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7F6EA9C-9D1C-42B9-8730-451545E6A1D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7F6EA9C-9D1C-42B9-8730-451545E6A1D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7F6EA9C-9D1C-42B9-8730-451545E6A1D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7F6EA9C-9D1C-42B9-8730-451545E6A1D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

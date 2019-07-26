@@ -22,7 +22,7 @@ namespace Chronal_Calibration.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Chronal_Calibration.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Chronal_Calibration.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace Chronal_Calibration.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -80,9 +80,101 @@ namespace Chronal_Calibration.Properties {
         ///-12
         ///+17
         ///-6
-        ///-18.
+        ///-18
+        ///+1
+        ///+15
+        ///-14
+        ///+10
+        ///-4
+        ///-2
+        ///+5
+        ///+6
+        ///+8
+        ///+3
+        ///+17
+        ///-9
+        ///+18
+        ///-1
+        ///+17
+        ///-15
+        ///+7
+        ///-6
+        ///-17
+        ///-17
+        ///+19
+        ///+19
+        ///-13
+        ///+18
+        ///-15
+        ///+16
+        ///+7
+        ///-10
+        ///-5
+        ///+22
+        ///+8
+        ///-13
+        ///+4
+        ///+3
+        ///+19
+        ///+17
+        ///-19
+        ///-1
+        ///-11
+        ///+2
+        ///+1
+        ///-13
+        ///+1
+        ///+3
+        ///-14
+        ///+16
+        ///-9
+        ///+19
+        ///+13
+        ///-20
+        ///+6
+        ///+22
+        ///+10
+        ///+6
+        ///+15
+        ///-13
+        ///-13
+        ///-8
+        ///+16
+        ///+20
+        ///-5
+        ///+1
+        ///+7
+        ///+11
+        ///-13
+        ///+5
+        ///-16
+        ///-2
+        ///-4
+        ///+25
+        ///-5
+        ///-10
+        ///-12
+        ///-9
+        ///+16
+        ///-2
+        ///-19
+        ///-3
+        ///-12
+        ///+5
+        ///+17
+        ///+16
+        ///+11
+        ///+16
+        ///+10
+        ///+4
+        ///+3
+        ///+11
+        ///-12
+        ///+19
+        ///+3
+        ///+17        /// [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string Input {
+        public static string Input {
             get {
                 return ResourceManager.GetString("Input", resourceCulture);
             }
