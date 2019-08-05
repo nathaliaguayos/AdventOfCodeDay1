@@ -6,7 +6,7 @@ This project is named "Chronal_Calibration" and is based on the [Advent Of Code]
 
 ## Getting Started
 
-First of all, thank you for coming to take a look into my repository, it is a little empty now, but I'll work on keeping it growing. At this moment you should know what kind of project is it, but please continue reading I'll let you know what are the prerequisites to get a copy of my project on your local machine and how you can run it.
+At this moment you should know what kind of project is it, but please continue reading I'll let you know what are the prerequisites to get a copy of my project on your local machine and how you can run it.
 
 
 ### Prerequisites
